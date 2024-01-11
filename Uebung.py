@@ -28,7 +28,7 @@ def addUserToList(listOfUserObjects):
 # Jahr 2022 ihr Kennwort nicht geändert haben, werden deaktiviert, in dem der Key valid
 # den Value False erhält.
 
-# Aufgabe 6.
+# Aufgabe 6:
 #
 # Erstellen Sie eine Funktion setValid mit dem Parameter listOfUserObjects. Der Parameter
 # beinhaltet eine Liste mit allen Benutzerobjekten.
@@ -36,6 +36,10 @@ def addUserToList(listOfUserObjects):
 # Gehen Sie alle Benutzer der Liste des Parameter durch. Jeder Benutzer, welcher
 # deaktivert wurde (siehe Aufgabe 5) erhält ein neues Passwort. Das Passwort gibt der
 # Anwender über einen input ein. Zudem wird der Value für den valid-Key auf True gesetzt.
+
+# Aufgabe 7:
+#
+# Prüfen Sie, mittels der Funktion checkMailAdresses(), ob doppelte E-Mail-Adressen vorliegen.
 
 # In dem folgenden Bereich nehmen Sie keine Änderungen vor!
 # Testdaten:
