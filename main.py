@@ -17,6 +17,8 @@ def addUserToList(listOfUserObjects):
     userObject["valid"] = True
     userObject["birthday"] = setDatetime()
 
+    listOfUserObjects.append(userObject)
+
 # Aufgabe 1 (x Punkte)
 # Erstellen Sie eine Funktion printUserObject mit dem Parameter userObject.
 # Der Parameter enthält ein dict, welches in der Funktion addUserToList
@@ -31,4 +33,7 @@ def addUserToList(listOfUserObjects):
 listOfUserObjects = list() # []
 
 addUserToList(listOfUserObjects)
+addUserToList(listOfUserObjects)
+addUserToList(listOfUserObjects)
 
+print(listOfUserObjects)
