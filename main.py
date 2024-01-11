@@ -48,8 +48,14 @@ def checkValidUsers(listOfUserObjects):
     # Implementieren Sie die Rückgabe aller aktiven Benutzer als Liste von Strings.
     # Jeder String hat dabei das Format "Nachname, Vorname".
     # Ein Benutzer ist dann Aktiv, wenn der Value zum Key "valid" True ist.
+    validUsers = list()
 
-    pass
+    for userObject in listOfUserObjects:
+        if userObject["valid"]: # oder if item["valid"] == True:
+            validUsers.append(userObject["lastname"] + ", " + userObject["prename"])
+
+    return validUsers
+
 
 # In diesem Bereich nichts ändern!
 listOfUserObjects = list() # []
@@ -69,10 +75,15 @@ userObject["prename"] = "Franz"
 userObject["lastname"] = "Meyer"
 userObject["e-mail"] = "franzi@web.de"
 userObject["password"] = "aefew!"
-userObject["valid"] = True
+userObject["valid"] = False
 userObject["birthday"] = datetime(2000, 10, 2)
 
 listOfUserObjects.append(userObject)
 
 # Ab hier können Sie Ihr Programm testen
-printUserObject(listOfUserObjects[0])
+
+validUsers = checkValidUsers(listOfUserObjects)
+
+for fullname in validUsers:
+    print(fullname)
+#printUserObject(listOfUserObjects[0])
