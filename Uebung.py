@@ -17,6 +17,17 @@ def addUserToList(listOfUserObjects):
 
     # Aufgabe 3: Ändern Sie das Änderungsdatum des Passworts auf die aktuelle Uhrzeit.
 
+# Aufgabe 4:
+#
+# Erstellen Sie eine Funktion checkYear mit dem Parameter listOfUserObjects. Der Parameter
+# beinhaltet eine Liste mit allen Benutzerobjekten.
+
+# Aufgabe 5:
+#
+# Implementieren Sie nun die Funktion für die Aufgabe 4. Alle Benutzer seit dem
+# Jahr 2024 ihr Kennwort nicht geändert haben, werden deaktiviert, in dem der Key valid
+# den Value False erhält.
+
 # In dem folgenden Bereich nehmen Sie keine Änderungen vor!
 # Testdaten:
 userList = list()
