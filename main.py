@@ -63,8 +63,19 @@ def changePassword(listOfUserObjects):
     # Ist der Benutzername in der Liste der Benutzer vorhanden, arbeiten Sie
     # mit dem gefundenen Objekts weiter. Andernfalls geben Sie eine Fehler-
     # meldung aus. Der Benutzername entspricht der E-Mail-Adresse.
+    username = input("Geben Sie den Benutzernamen ein: ")
+    user = None
 
-    pass
+    for userObject in listOfUserObjects:
+        if userObject["e-mail"] == username:
+            user = userObject
+
+            break
+
+    if user == None:
+        print("Unbekannter Benutzer")
+
+        return
 
     # Aufgabe 4 (xx Punkte)
     #
@@ -73,6 +84,14 @@ def changePassword(listOfUserObjects):
     # wendet werden. Wird ein doppeltes Passwort vergeben, muss ein neues
     # Passwort eingegeben werden. Die Eingabe des Passworts wiederholt sich
     # so lange, bis das neue Passwort erfolgreich gesetzt wird.
+    user["password"] = input("Geben Sie das neue Passwort ein: ")
+
+    for userObject in listOfUserObjects:
+        if (userObject["password"] == user["password"] and userObject["e-mail"] != user["e-mail"]):
+            print("Passwort bereits vorhanden.")
+
+            while userObject["password"] == user["password"]:
+                user["password"] = input("Geben Sie das neue Passwort ein: ")
 
 
 # In diesem Bereich nichts ändern!
