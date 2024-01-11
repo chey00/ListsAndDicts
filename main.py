@@ -56,6 +56,24 @@ def checkValidUsers(listOfUserObjects):
 
     return validUsers
 
+def changePassword(listOfUserObjects):
+    # Aufgabe 3 (xx Punkte)
+    #
+    # Implementieren Sie die Eingabe eines Benutzernamens durch den Anwender.
+    # Ist der Benutzername in der Liste der Benutzer vorhanden, arbeiten Sie
+    # mit dem gefundenen Objekts weiter. Andernfalls geben Sie eine Fehler-
+    # meldung aus. Der Benutzername entspricht der E-Mail-Adresse.
+
+    pass
+
+    # Aufgabe 4 (xx Punkte)
+    #
+    # Der Benutzer wird nun zur Eingabe eines neuen Passworts aufgefordert.
+    # Das Passwort darf nicht von einem anderen Benutzer in der Liste ver-
+    # wendet werden. Wird ein doppeltes Passwort vergeben, muss ein neues
+    # Passwort eingegeben werden. Die Eingabe des Passworts wiederholt sich
+    # so lange, bis das neue Passwort erfolgreich gesetzt wird.
+
 
 # In diesem Bereich nichts ändern!
 listOfUserObjects = list() # []
@@ -75,7 +93,7 @@ userObject["prename"] = "Franz"
 userObject["lastname"] = "Meyer"
 userObject["e-mail"] = "franzi@web.de"
 userObject["password"] = "aefew!"
-userObject["valid"] = False
+userObject["valid"] = True
 userObject["birthday"] = datetime(2000, 10, 2)
 
 listOfUserObjects.append(userObject)
@@ -83,6 +101,8 @@ listOfUserObjects.append(userObject)
 # Ab hier können Sie Ihr Programm testen
 
 validUsers = checkValidUsers(listOfUserObjects)
+
+print(validUsers)
 
 for fullname in validUsers:
     print(fullname)
