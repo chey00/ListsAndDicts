@@ -8,6 +8,8 @@ def addUserToList(listOfUserObjects):
     userObject["passwordChanged"] = datetime(2001,2,21)
     userObject["e-mail"] = "lord@kelvin.org"
 
+    listOfUserObjects.append(userObject)
+
     # Aufgabe 1: Welche Aufgabe implementiert die Funktion addUserToList?
 
     # Aufgabe 2: Ändern Sie die Funktion so ab, dass der Anwender bei jedem Aufruf den Benutzernamen
@@ -42,4 +44,4 @@ user["e-mail"] = "jule@meyer.de"
 
 
 # Ab hier können Sie Ihre Lösungen testen:
-pass
+print("Viel Erfolg!")
