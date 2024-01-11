@@ -25,7 +25,7 @@ def addUserToList(listOfUserObjects):
 # Aufgabe 5:
 #
 # Implementieren Sie nun die Funktion für die Aufgabe 4. Alle Benutzer seit dem
-# Jahr 2024 ihr Kennwort nicht geändert haben, werden deaktiviert, in dem der Key valid
+# Jahr 2022 ihr Kennwort nicht geändert haben, werden deaktiviert, in dem der Key valid
 # den Value False erhält.
 
 # In dem folgenden Bereich nehmen Sie keine Änderungen vor!
